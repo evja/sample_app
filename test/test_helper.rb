@@ -33,4 +33,9 @@ class ActiveSupport::TestCase
       defined?(post_via_redirect)
     end
 
+<<<<<<< HEAD
   end
+=======
+  # Add more helper methods to be used by all tests here...
+end
+>>>>>>> 8_login_logout
