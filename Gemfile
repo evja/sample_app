@@ -6,6 +6,10 @@ gem 'rails', '4.1.8'
 # Using bcrypt for passwords
 gem 'bcrypt',               '3.1.7'
 
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+
 gem 'bootstrap-sass',       '>= 3.2.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
