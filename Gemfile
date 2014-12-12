@@ -2,10 +2,12 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
-# Using bcrypt for passwords
-gem 'bcrypt',               '3.1.7'
+gem 'rails'
 
+gem 'bcrypt'
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 gem 'bootstrap-sass',       '>= 3.2.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
@@ -29,7 +31,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 
 group :development, :test do
-  gem 'minitest-reporters', '1.0.5'
   gem 'pry-byebug'
   gem 'better_errors'
   gem "binding_of_caller"
@@ -37,7 +38,13 @@ group :development, :test do
   gem 'spring'
 end
 
+group :test do
+  gem 'minitest-reporters'
+  gem 'mini_backtrace'
+  gem 'guard-minitest'
+end
+
 group :production do
   gem 'rails_12factor', '0.0.2'
-  gem 'unicorn',        '4.8.3'
+  gem 'unicorn'
 end
